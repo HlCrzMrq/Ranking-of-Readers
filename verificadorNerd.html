@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quão nerd você é?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header><h1>Verificador de Nerdisse - Quiz</h1>
+            <nav>
+                <p>
+                    | <a href="index.html">Ranking of Readers</a> |
+                    <a href="cadastrar.html">Cadastrar</a> |
+                    <a href="verificadorNerd.html">Quão Nerd você é?</a> |
+                    <a href="rankingeral.html">Ranking Geral</a> |
+                </p>
+            </nav>
+        </header>
+        <article>
+            <!--Dependendo de quantos marcar que leu, cada um tem um indice nerd
+            No java tem um botão onclick que ativa só uma função simples de calculo de porcentagem-->
+            <form id="form" name="form">
+                <label>Quais grandes franquias leu?</label><br>
+                <input type="checkbox" name="harry" id="harry" value="1">Harry Potter<br>
+                <input type="checkbox" name="anel" id="anel" value="2">Senhor dos Anéis<br>
+                <input type="checkbox" name="star" id="star" value="1,5">Star Wars<br>
+                <label for="comeco">Quando começou a ler?</label><br>
+                <select name="comeco">
+                    <option value="5">5-7</option>
+                    <option value="4">8-10</option>
+                    <option value="3">11-13</option>
+                    <option value="2">14-16</option>
+                    <option value="1">17-19</option>
+                    <option value="0">20+</option>
+                </select><br>
+                <label for="rpg">Joga/Jogou RPG?</label><br>
+                <input type="radio" name="rpg" value="10">Sim<br>
+                <input type="radio" name="rpg" value="0">Não<br>
+                <button type="button" onclick="nerdisse()">Calcular</button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <h3>Contato e Feedback</h3>
+        <p>
+            Endereço: Rua Clarice Lispector, 450<br>
+            Whatsapp: (11) 123987-546<br>
+            <a>Termos de Serviço</a><br>
+            <a>Codigo de defesa do consumidor</a><br>
+            <a>Alguma coisa</a><br>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
